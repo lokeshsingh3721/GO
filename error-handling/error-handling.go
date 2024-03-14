@@ -22,7 +22,11 @@ func main(){
 	if err!=nil{
 		fmt.Printf("there is an error ")
 	}else {
-		fmt.Printf("my name is %s and my age is %d",user.name,user.age)
+		fmt.Printf("my name is %s and my age is %d",user.name,user.age,)
 	}
 }
+
+// we can also implement the custom interface type for errors
+
+
 
