@@ -1,0 +1,3 @@
+module veriadic-function
+
+go 1.22.1
