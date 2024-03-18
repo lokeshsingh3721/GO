@@ -38,7 +38,11 @@ func main() {
 
  note :- channel is blocking operating , if there is no go routine who is reading out the channel then the code will be stuck 
 
+	ch := make(chan int , 100) create a channel buffer
 
+	close(ch) // to close the channel
+
+	dont send on a closed channel
 
  */
 
