@@ -6,19 +6,17 @@ import (
 	"net/http"
 )
 
+
 func main() {
 
-	// API routes
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello world from GfG")
-	})
-	http.HandleFunc("/hi", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w,"Hi")
+	http.HandleFunc("/",func(w http.ResponseWriter , r *http.Request){
+		fmt.Fprintf(w,"hello ")
 	})
 
-	port := ":5050"
-	fmt.Println("Server is running on port" + port)
+	http.HandleFunc("/hi",func(w http.ResponseWriter, r *http.Request){
+		fmt.Fprintf(w,"hi")
+	})
 
-	// Start server on port specified above
-	log.Fatal(http.ListenAndServe(port, nil))
+	log.Fatal(http.ListenAndServe(":8081",nil))
+	
 }
