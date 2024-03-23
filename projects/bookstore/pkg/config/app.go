@@ -1,9 +1,8 @@
-package config 
+package config
 
 import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-
 )
 
 var(
@@ -11,7 +10,7 @@ var(
 )
 
 func Connect (){
-	d,err:= gorm.Open("mysql","lokesh:lokeshsingh3721/simplerest?charset=utf8&parseTime=True&loc=Local")
+	d,err:= gorm.Open("mysql","avnadmin:AVNS_WqpMQ0ua4-Tg90ioU5K@mysql-156a842-study3721-9d82.a.aivencloud.com:15607/defaultdb?ssl-mode=REQUIRED")
 	if err != nil{
 		panic(err)
 	}
